@@ -17,7 +17,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequiredLength = 8;
     options.Password.RequireDigit = true;
-    options.Password.RequireNonAlphanumeric = true;
+    //options.Password.RequireNonAlphanumeric = true;
 
     options.Lockout.MaxFailedAccessAttempts = 3;
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
